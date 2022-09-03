@@ -6,7 +6,15 @@ using System.Threading.Tasks;
 
 namespace WFADePipe
 {
-    internal class Controleur
+    public class Controleur
     {
+        De deABrasser;
+        protected int totalObtenu;
+
+        public void GenererDe()
+        {
+           deABrasser = new De();
+            
+        }
     }
 }

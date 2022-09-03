@@ -8,7 +8,7 @@ namespace WFADePipe
 {
     public class DePiPe: De
     {
-        public DePiPe() : base(true)
+        public DePiPe() : base("Dé pipé")
         {
 
         }
