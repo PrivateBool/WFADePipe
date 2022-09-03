@@ -8,13 +8,26 @@ namespace WFADePipe
 {
     public class Controleur
     {
-        De deABrasser;
+        
         protected int totalObtenu;
 
         public void GenererDe()
         {
-           deABrasser = new De();
-            
+            Random r = new Random();
+            int harard = r.Next(0,1);
+            if (harard = 0)
+	        {
+                DeOrdinaire deABrasser = new DeOrdinaire();
+	        }
+            else
+	        {
+                DePiPe deABrasser = new DePiPe();
+	        }            
         }
+         public void Brasser(De deABrasser)
+         {
+            deABrasser.Brasser();
+         }
+       
     }
 }
