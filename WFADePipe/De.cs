@@ -10,15 +10,15 @@ namespace WFADePipe
     {
         private int valeur;
         private readonly int nombreDeFace = 6;
-        private readonly bool estPipe;
+        private readonly string estPipe;
         public Random random = new Random();
         public int NomBreDeFace => nombreDeFace;
 
         public int Valeur { get => valeur; set => valeur = value; }
 
-        public De(bool estPipe)
+        public De(string typeDEDE)
         {
-            this.estPipe = estPipe;
+            this.estPipe = typeDEDE;
         }
         public virtual void Brasser(De DeABrasser)
         {
