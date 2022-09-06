@@ -1,6 +1,6 @@
 ﻿namespace WFADePipe
 {
-    partial class FormDe
+    partial class FormIntreface
     {
         /// <summary>
         /// Variable nécessaire au concepteur.
@@ -33,6 +33,7 @@
             this.textBoxTotal = new System.Windows.Forms.TextBox();
             this.labelTotal = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.labelTypeDeDe = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // labelValeurDe
@@ -77,18 +78,29 @@
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // FormDe
+            // labelTypeDeDe
+            // 
+            this.labelTypeDeDe.AutoSize = true;
+            this.labelTypeDeDe.Font = new System.Drawing.Font("Microsoft Sans Serif", 22.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelTypeDeDe.Location = new System.Drawing.Point(279, 50);
+            this.labelTypeDeDe.Name = "labelTypeDeDe";
+            this.labelTypeDeDe.Size = new System.Drawing.Size(359, 42);
+            this.labelTypeDeDe.TabIndex = 5;
+            this.labelTypeDeDe.Text = "Type de dé brasser";
+            // 
+            // FormIntreface
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 554);
+            this.Controls.Add(this.labelTypeDeDe);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.textBoxTotal);
             this.Controls.Add(this.labelTotal);
             this.Controls.Add(this.textBoxValeurDe);
             this.Controls.Add(this.labelValeurDe);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.Name = "FormDe";
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Name = "FormIntreface";
             this.Text = "Jeu de dé";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -102,6 +114,7 @@
         private System.Windows.Forms.TextBox textBoxTotal;
         private System.Windows.Forms.Label labelTotal;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Label labelTypeDeDe;
     }
 }
 

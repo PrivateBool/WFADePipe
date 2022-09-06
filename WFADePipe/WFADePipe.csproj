@@ -49,7 +49,7 @@
     <Compile Include="Controleur.cs" />
     <Compile Include="De.cs" />
     <Compile Include="DeOrdinaire.cs" />
-    <Compile Include="DePiPe.cs" />
+    <Compile Include="DePipe.cs" />
     <Compile Include="FormInterface.cs">
       <SubType>Form</SubType>
     </Compile>

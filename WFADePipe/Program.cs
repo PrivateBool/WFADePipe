@@ -16,7 +16,7 @@ namespace WFADePipe
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FormDe());
+            Application.Run(new FormIntreface());
         }
     }
 }

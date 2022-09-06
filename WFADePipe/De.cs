@@ -10,19 +10,20 @@ namespace WFADePipe
     {
         private int valeur;
         private readonly int nombreDeFace = 6;
-        private readonly string estPipe;
+        private string typeDeDe;
         public Random random = new Random();
         public int NomBreDeFace => nombreDeFace;
 
         public int Valeur { get => valeur; set => valeur = value; }
+        public string TypeDeDe { get => typeDeDe; set => typeDeDe = value; }
 
         public De(string typeDEDE)
         {
-            this.estPipe = typeDEDE;
+            this.TypeDeDe = typeDEDE;
         }
-        public virtual void Brasser(De DeABrasser)
+        public virtual void Brasser()
         {
-            DeABrasser.Valeur = (int)(random.NextDouble() * DeABrasser.NomBreDeFace);
+            this.Valeur = (int)(Math.Ceiling((random.NextDouble()) * this.NomBreDeFace));
         }
     }
 }

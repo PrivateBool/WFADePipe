@@ -10,16 +10,21 @@ using System.Windows.Forms;
 
 namespace WFADePipe
 {
-    public partial class FormDe : Form
+    public partial class FormIntreface : Form
     {
-        public FormDe()
+        private readonly Controleur controleur;        
+        public FormIntreface()        
         {
             InitializeComponent();
+            controleur = new Controleur(0);
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Controleur 
+            controleur.GenererDe();
+            textBoxTotal.Text = controleur.totalObtenu.ToString();
+            textBoxValeurDe.Text = controleur.TrouverValeurDe().ToString();
+            labelTypeDeDe.Text = controleur.TrouverTypeDeDe().ToString();
         }
     }
 }

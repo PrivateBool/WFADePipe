@@ -6,22 +6,22 @@ using System.Threading.Tasks;
 
 namespace WFADePipe
 {
-    public class DePiPe: De
+    public class DePipe: De
     {
-        public DePiPe() : base("Dé pipé")
+        public DePipe() : base("Dé pipé")
         {
 
         }
-        public override void Brasser(De DeABrasser)
+        public override void Brasser()
         {
-            var resultatDe = (int)(random.NextDouble() * DeABrasser.NomBreDeFace*2);
+            int resultatDe = (int)(Math.Ceiling((random.NextDouble()) * this.NomBreDeFace * 1.5));
             if (resultatDe > 6)
             {
-                DeABrasser.Valeur = 6;
+                this.Valeur = resultatDe -3;
             }
             else
             {
-                DeABrasser.Valeur = resultatDe;
+                this.Valeur = resultatDe;
             }
         }
     }
