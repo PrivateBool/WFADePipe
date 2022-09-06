@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace WFADePipe
 {
-    internal class DeOrdinaire
+    public class DeOrdinaire: De
     {
+        public DeOrdinaire() : base ("Dé ordinaire")
+        {
+        }
     }
 }
