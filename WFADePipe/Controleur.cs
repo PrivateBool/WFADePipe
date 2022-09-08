@@ -8,12 +8,15 @@ namespace WFADePipe
 {
     public class Controleur
     {
-        public int totalObtenu;        
-        public De deHasard;
+        private int totalObtenu;        
+        private De deCourant;
         public Controleur(int totalObtenu)
         {
-            this.totalObtenu = totalObtenu;           
+            this.TotalObtenu = totalObtenu;           
         }
+
+        public int TotalObtenu { get => totalObtenu; set => totalObtenu = value; }
+        public De DeCourant { get => deCourant; set => deCourant = value; }
 
         public void GenererDe()
         {
@@ -21,15 +24,15 @@ namespace WFADePipe
             int harard = r.Next(0,2);
             if (harard == 0)
 	        {
-                deHasard = new DeOrdinaire();
-                deHasard.Brasser();
-                totalObtenu += deHasard.Valeur;
+                DeCourant = new DeOrdinaire();
+                DeCourant.Brasser();
+                TotalObtenu += DeCourant.Valeur;
             }
             else
 	        {
-                deHasard = new DePipe();
-                deHasard.Brasser();
-                totalObtenu += deHasard.Valeur;
+                DeCourant = new DePipe();
+                DeCourant.Brasser();
+                TotalObtenu += DeCourant.Valeur;
             }            
         }
        

@@ -13,7 +13,6 @@ namespace WFADePipe
         private string typeDeDe;
         public Random random = new Random();
         public int NomBreDeFace => nombreDeFace;
-
         public int Valeur { get => valeur; set => valeur = value; }
         public string TypeDeDe { get => typeDeDe; set => typeDeDe = value; }
 

@@ -23,8 +23,8 @@ namespace WFADePipe
         {
             controleur.GenererDe();
             textBoxTotal.Text = controleur.totalObtenu.ToString();
-            textBoxValeurDe.Text = controleur.deHasard.Valeur.ToString();
-            labelTypeDeDe.Text = controleur.deHasard.TypeDeDe;
+            textBoxValeurDe.Text = controleur.deCourant.Valeur.ToString();
+            labelTypeDeDe.Text = controleur.deCourant.TypeDeDe;
 
         }
     }
