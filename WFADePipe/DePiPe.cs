@@ -14,7 +14,7 @@ namespace WFADePipe
         }
         public override void Brasser()
         {
-            int resultatDe = (int)(Math.Ceiling((random.NextDouble()) * this.NomBreDeFace * 1.5));
+            int resultatDe = (int)(Math.Ceiling((random.NextDouble()) * (this.NomBreDeFace * 1.5)));
             if (resultatDe > 6)
             {
                 this.Valeur = resultatDe -3;
