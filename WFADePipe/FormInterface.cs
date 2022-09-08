@@ -16,15 +16,15 @@ namespace WFADePipe
         public FormIntreface()        
         {
             InitializeComponent();
-            controleur = new Controleur(0);
+            controleur = new Controleur();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             controleur.GenererDe();
-            textBoxTotal.Text = controleur.totalObtenu.ToString();
-            textBoxValeurDe.Text = controleur.deCourant.Valeur.ToString();
-            labelTypeDeDe.Text = controleur.deCourant.TypeDeDe;
+            textBoxTotal.Text = controleur.TotalObtenu.ToString();
+            textBoxValeurDe.Text = controleur.DeCourant.Valeur.ToString();
+            labelTypeDeDe.Text = controleur.DeCourant.TypeDeDe;
 
         }
     }
